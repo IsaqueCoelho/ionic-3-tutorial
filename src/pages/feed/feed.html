@@ -20,32 +20,32 @@
       <ion-avatar item-start>
         <img src="assets/imgs/marty-avatar.png">
       </ion-avatar>
-      <h2 class="feed-title">{{ user_name }}</h2>
-      <p>November 5, 1955</p>
+      <h2 class="feed-title">{{ objeto_feed.titulo }}</h2>
+      <p>{{ objeto_feed.data }}</p>
     </ion-item>
 
     <img src="assets/imgs/advance-card-bttf.png">
 
     <ion-card-content>
-      <p>Criando primeiro post do feed de notícias.</p>
+      <p>{{ objeto_feed.descricao }}</p>
     </ion-card-content>
 
     <ion-row>
       <ion-col>
         <button ion-button icon-left clear small>
           <ion-icon name="thumbs-up"></ion-icon>
-          <div>12 Likes</div>
+          <div>{{ objeto_feed.qntd_likes }}</div>
         </button>
       </ion-col>
       <ion-col>
         <button ion-button icon-left clear small>
           <ion-icon name="text"></ion-icon>
-          <div>4 Comments</div>
+          <div>{{ objeto_feed.qntd_comments }}</div>
         </button>
       </ion-col>
       <ion-col center text-center>
         <ion-note>
-          11h ago
+          {{ objeto_feed.comment }}
         </ion-note>
       </ion-col>
     </ion-row>
